@@ -1,7 +1,5 @@
 package com.roilka.shop.common.util;
 
-import org.apache.commons.lang3.ArrayUtils;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -467,15 +465,7 @@ public class DateUtils {
         return yearLast;
     }
     
-    /**
-     * 是否为下一季度的第一天
-     * 
-     * @return boolean
-     */
-    public static boolean isNextQuarterStartDay() {
-        int[] quarterMonths = {1,4,7,10};
-        return ArrayUtils.contains(quarterMonths,DateUtils.getThisMonth());
-    }
+
     
     /** 
      * 得到几天前的时间 
